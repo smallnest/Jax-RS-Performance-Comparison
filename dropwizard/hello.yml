@@ -1,0 +1,15 @@
+server:
+  type: default
+  rootPath: /rest/*
+  applicationConnectors:
+    - type: http
+      bindHost: 0.0.0.0
+      port: 8080
+  adminConnectors:
+    - type: http
+      bindHost: 127.0.0.1
+      port: 8081
+logging:
+  level: INFO
+  loggers:
+    "com.colobu.rest.dropwizard": DEBUG
