@@ -24,6 +24,9 @@
         <module>resteasy-netty</module>
         <module>dropwizard</module>
         <module>springboot</module>
+        <module>nativenetty</module>
+        <module>resteasy-netty4</module>
+        <module>vertx</module>
     </modules>
 
     <dependencyManagement>

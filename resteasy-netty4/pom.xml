@@ -9,10 +9,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>resteasy-netty</artifactId>
+    <artifactId>resteasy-netty4</artifactId>
 
     <properties>
         <resteasy.version>3.0.13.Final</resteasy.version>
+        <netty.version>4.0.33.Final</netty.version>
     </properties>
 
     <dependencies>
@@ -28,8 +29,13 @@
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-netty</artifactId>
+            <artifactId>resteasy-netty4</artifactId>
             <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -69,7 +75,7 @@
                                         implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.colobu.rest.resteasynetty.Main</mainClass>
+                                    <mainClass>com.colobu.rest.resteasynetty4.Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -88,7 +94,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.colobu.rest.resteasynetty.Main</mainClass>
+                    <mainClass>com.colobu.rest.resteasynetty4.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>

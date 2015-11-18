@@ -7,7 +7,14 @@ Personally, I perfer jax-rs implementations and micro frameworks for deploying a
 So I have test five Jax-RS implementations plus embedded containers despite business logics. The RESTful service is very simple and it only returns a "hello world" string. Remember,  tests don't contain any business logics even JSON libraries.
 There are other articles to dicuss serialization framework. For example, [my test](http://colobu.com/2014/08/26/java-serializer-comparison/)
 
-> I have added test result for spring boot since some one want to know why Spring boot framework is my choice.
+I have added more RESTful framework besides Jax-RS implementation, which contains:
+* Spring-boot
+* RESTEasy + Netty4
+* Native Netty
+* Vert.x
+
+You can check the test result and the performancre chart.
+
 ### Compile applications
 It is a multiple-module maven project.
 You can run "mvn package" in parent directory to packge each module.
@@ -36,6 +43,9 @@ java -Xmx4g -Xms4g -jar dropwizard-1.0-SNAPSHOT.jar hello.yml
 java -Xmx4g -Xms4g -jar resteasy-netty-1.0-SNAPSHOT.jar 
 java -Xmx4g -Xms4g -jar resteasy-undertow-1.0-SNAPSHOT.jar
 java -Xmx4g -Xms4g -jar springboot-1.0-SNAPSHOT.jar
+java -Xmx4g -Xms4g -jar resteasy-netty4-1.0-SNAPSHOT.jar 
+java -Xmx4g -Xms4g -jar nativenetty-1.0-SNAPSHOT.jar
+java -Xmx4g -Xms4g -jar vertx-1.0-SNAPSHOT.jar 
 ```
 
 ### Test Result
@@ -48,6 +58,11 @@ It looks Resteasy is better than jersey whatever jersey uses grizzly2 or jetty c
 It is predictable that performance of dropwizard is same to jersey+jetty.
 Resteasy is excellent in undertow and netty.
 To my surprise is resteasy+undertow is a little better than resteasy+netty. Maybe they are all developed by JBoss and they have done some optimization.
-I do not recommend you use spring boot in large projects.
+I do not recommend you use spring boot in large projects because its performance and style.
+Of course native netty is number one but my test has not contains a http router so maybe you can't say it is RESTful framework. But I like its perforamnce.
+Performance of RESTEasy+netty4 is lower than what i expect. but RESTEasy+netty3 is very good.
+One interesting framework is Vert.x. I like its functional programming style but its performance is not so good.
+
+
 
 I have not monitored the CPU usage and memory usage. You can try it. 
