@@ -216,6 +216,49 @@ Transfer/sec:      6.42MB
 ```
 
 
+### spring boot 1.3.0.RELEASE
+[smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c100 -d30s http://127.0.0.1:8080/hello
+Running 30s test @ http://127.0.0.1:8080/hello
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.39ms    4.10ms  58.23ms   90.89%
+    Req/Sec     2.31k   301.34     6.31k    70.86%
+  1107622 requests in 30.10s, 162.87MB read
+Requests/sec:  36799.74
+Transfer/sec:      5.41MB
+
+[smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c200 -d30s http://127.0.0.1:8080/hello 
+Running 30s test @ http://127.0.0.1:8080/hello
+  16 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.34ms    8.62ms 125.04ms   95.44%
+    Req/Sec     2.38k   263.37     6.62k    75.76%
+  1138849 requests in 30.09s, 167.46MB read
+Requests/sec:  37847.67
+Transfer/sec:      5.57MB
+
+[smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c500 -d30s http://127.0.0.1:8080/hello 
+Running 30s test @ http://127.0.0.1:8080/hello
+  16 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.99ms    5.43ms 123.32ms   82.28%
+    Req/Sec     2.43k   183.80     5.77k    76.53%
+  1161165 requests in 30.09s, 170.74MB read
+Requests/sec:  38592.82
+Transfer/sec:      5.67MB
+
+[smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c1000 -d30s http://127.0.0.1:8080/hello 
+Running 30s test @ http://127.0.0.1:8080/hello
+  16 threads and 1000 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    25.73ms    4.36ms  72.17ms   78.96%
+    Req/Sec     2.42k   177.95     6.94k    80.52%
+  1156937 requests in 30.10s, 170.11MB read
+Requests/sec:  38436.42
+Transfer/sec:      5.65MB
+
+
+
 
 
 
