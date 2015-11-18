@@ -51,16 +51,24 @@ java -Xmx4g -Xms4g -jar vertx-1.0-SNAPSHOT.jar
 ### Test Result
 
 Test data is [here](TestData.md)
+
 ![](performance.png)
 
 ### Conclusion
 It looks Resteasy is better than jersey whatever jersey uses grizzly2 or jetty container.
+
 It is predictable that performance of dropwizard is same to jersey+jetty.
+
 Resteasy is excellent in undertow and netty.
+
 To my surprise is resteasy+undertow is a little better than resteasy+netty. Maybe they are all developed by JBoss and they have done some optimization.
+
 I do not recommend you use spring boot in large projects because its performance and style.
+
 Of course native netty is number one but my test has not contains a http router so maybe you can't say it is RESTful framework. But I like its perforamnce.
+
 Performance of RESTEasy+netty4 is lower than what i expect. but RESTEasy+netty3 is very good.
+
 One interesting framework is Vert.x. I like its functional programming style but its performance is not so good.
 
 
