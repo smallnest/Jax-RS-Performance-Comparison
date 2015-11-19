@@ -12,6 +12,8 @@ I have added more RESTful framework besides Jax-RS implementation, which contain
 * RESTEasy + Netty4
 * Native Netty
 * Vert.x
+* Go
+
 
 You can check the test result and the performancre chart.
 
@@ -74,3 +76,6 @@ One interesting framework is Vert.x. I like its functional programming style but
 
 
 I have not monitored the CPU usage and memory usage. You can try it. 
+
+### Update
+* 2015/11/19 add native go, go-restful codes
