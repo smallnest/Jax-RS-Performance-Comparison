@@ -27,6 +27,7 @@
         <module>nativenetty</module>
         <module>resteasy-netty4</module>
         <module>vertx</module>
+        <module>vertx-verticles</module>
     </modules>
 
     <dependencyManagement>

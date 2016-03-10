@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>vertx</artifactId>
+    <artifactId>vertx-verticles</artifactId>
 
     <properties>
         <vertx.version>3.2.1</vertx.version>
