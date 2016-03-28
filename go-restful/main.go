@@ -1,18 +1,13 @@
 package main
 
-import (
-	"io"
-	"net/http"
-	"github.com/emicklei/go-restful"
-)
+import "github.com/kataras/iris"
 
 func main() {
-	ws := new(restful.WebService)
-	ws.Route(ws.GET("/rest/hello").To(hello))
-	restful.Add(ws)
-	http.ListenAndServe(":8080", nil)
+	r := iris.New()
+	r.Get("/rest/hello", hello)
+	r.Listen(":8080")
 }
 
-func hello(req *restful.Request, resp *restful.Response) {
-	io.WriteString(resp, "Hello world")
+func hello(c *iris.Context) {
+	c.WriteText(200, "Hello world")
 }
