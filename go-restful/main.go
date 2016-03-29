@@ -1,13 +1,13 @@
 package main
 
-import "github.com/kataras/iris"
+import (
+	"github.com/kataras/iris"
+)
 
 func main() {
-	r := iris.New()
-	r.Get("/rest/hello", hello)
-	r.Listen(":8080")
-}
-
-func hello(c *iris.Context) {
-	c.WriteText(200, "Hello world")
+	api := iris.New()
+	api.Get("/rest/hello", func(c *iris.Context) {
+		c.Text("Hello world")
+	})
+	api.Listen(":8080")
 }

@@ -421,45 +421,46 @@ Running 30s test @ http://127.0.0.1:8080/rest/hello
 Requests/sec: 113775.80
 Transfer/sec:     13.89MB
 
-### go-restful
+### go-restful (iris)
 [smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c100 -d30s http://127.0.0.1:8080/rest/hello
 Running 30s test @ http://127.0.0.1:8080/rest/hello
   16 threads and 100 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     3.54ms    6.24ms 102.00ms   88.56%
-    Req/Sec     5.05k     1.00k    9.79k    69.25%
-  2412520 requests in 30.04s, 294.50MB read
-Requests/sec:  80303.69
-Transfer/sec:      9.80MB
+    Latency     2.84ms    5.40ms  80.97ms   90.77%
+    Req/Sec     6.03k     1.65k   19.35k    75.03%
+  2885226 requests in 30.09s, 319.18MB read
+Requests/sec:  95899.44
+Transfer/sec:     10.61MB
 
 [smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c200 -d30s http://127.0.0.1:8080/rest/hello 
 Running 30s test @ http://127.0.0.1:8080/rest/hello
   16 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.41ms   10.01ms 160.67ms   87.86%
-    Req/Sec     4.44k   806.20     8.33k    69.17%
-  2120027 requests in 30.03s, 258.79MB read
-Requests/sec:  70598.85
-Transfer/sec:      8.62MB
+    Latency     4.90ms    7.72ms 104.81ms   87.61%
+    Req/Sec     6.61k     1.01k   15.55k    70.15%
+  3162116 requests in 30.07s, 349.81MB read
+Requests/sec: 105175.35
+Transfer/sec:     11.64MB
 
 [smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c500 -d30s http://127.0.0.1:8080/rest/hello 
+[root@ip-172-31-4-198 ~]# wrk -t16 -c500 -d30s http://127.0.0.1:8080/rest/hello 
 Running 30s test @ http://127.0.0.1:8080/rest/hello
   16 threads and 500 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    17.32ms   25.27ms 326.14ms   86.56%
-    Req/Sec     4.49k     1.11k   21.39k    70.58%
-  2143979 requests in 30.09s, 261.72MB read
-Requests/sec:  71253.15
-Transfer/sec:      8.70MB
+    Latency    14.58ms   23.04ms 278.81ms   86.94%
+    Req/Sec     6.90k     1.02k   12.04k    69.27%
+  3297379 requests in 30.03s, 364.78MB read
+Requests/sec: 109786.38
+Transfer/sec:     12.15MB
 
 [smallnest@ip-xxx-xxx-xxx-xxx ~]# wrk -t16 -c1000 -d30s http://127.0.0.1:8080/rest/hello 
 Running 30s test @ http://127.0.0.1:8080/rest/hello
   16 threads and 1000 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    35.35ms   52.16ms 615.65ms   86.29%
-    Req/Sec     4.50k     1.51k   13.38k    68.60%
-  2150451 requests in 30.10s, 262.51MB read
-Requests/sec:  71444.48
-Transfer/sec:      8.72MB
+    Latency    35.13ms   57.20ms 553.38ms   86.80%
+    Req/Sec     6.91k     1.05k   18.11k    70.85%
+  3309745 requests in 30.10s, 366.14MB read
+Requests/sec: 109966.09
+Transfer/sec:     12.17MB
 
 
