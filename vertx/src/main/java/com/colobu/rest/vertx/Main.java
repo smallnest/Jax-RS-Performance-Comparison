@@ -2,6 +2,7 @@ package com.colobu.rest.vertx;
 
 
 import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 import io.vertx.core.http.HttpServerResponse;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
@@ -9,7 +10,8 @@ import io.vertx.ext.web.handler.BodyHandler;
 
 public class Main {
     public static void main(String[] args) {
-        Vertx vertx = Vertx.vertx();
+        VertxOptions options = new VertxOptions();
+        Vertx vertx = Vertx.vertx(options);
         Router router = Router.router(vertx);
 
         router.route().handler(BodyHandler.create());
