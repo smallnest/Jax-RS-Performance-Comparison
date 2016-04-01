@@ -71,7 +71,7 @@ Of course native netty is number one but my test has not contains a http router 
 
 Performance of RESTEasy+netty4 is lower than what i expect. but RESTEasy+netty3 is very good.
 
-One interesting framework is Vert.x. I like its functional programming style but its performance is not so good.
+~~One interesting framework is Vert.x. I like its functional programming style but its performance is not so good.~~
 
 
 
