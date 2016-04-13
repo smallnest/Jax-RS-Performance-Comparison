@@ -32,7 +32,7 @@ public class Main {
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline p = ch.pipeline();
                             p.addLast(new HttpServerCodec());
-                            p.addLast(new HelloServerHandler());
+                            p.addLast(new HelloWorldHandler());
                         }
                     });
 

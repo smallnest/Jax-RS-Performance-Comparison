@@ -12,7 +12,7 @@
     <artifactId>nativenetty</artifactId>
 
     <properties>
-        <netty.version>4.0.33.Final</netty.version>
+        <netty.version>4.1.0.CR7</netty.version>
     </properties>
 
     <dependencies>
