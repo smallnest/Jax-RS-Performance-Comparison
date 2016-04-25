@@ -28,7 +28,7 @@
         <module>resteasy-netty4</module>
         <module>vertx</module>
         <module>vertx-verticles</module>
-        <module>armeria</module>
+        <!--<module>armeria</module>-->
     </modules>
 
     <dependencyManagement>
