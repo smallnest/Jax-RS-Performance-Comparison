@@ -49,7 +49,8 @@ java -Xmx4g -Xms4g -jar resteasy-undertow-1.0-SNAPSHOT.jar
 java -Xmx4g -Xms4g -jar springboot-1.0-SNAPSHOT.jar
 java -Xmx4g -Xms4g -jar resteasy-netty4-1.0-SNAPSHOT.jar 
 java -Xmx4g -Xms4g -jar nativenetty-1.0-SNAPSHOT.jar
-java -Xmx4g -Xms4g -jar vertx-1.0-SNAPSHOT.jar 
+java -Xmx4g -Xms4g -jar vertx-1.0-SNAPSHOT.jar
+java -Xmx4g -Xms4g -jar swagger-light-java-1.0.0.jar
 ```
 
 ### Test Result
