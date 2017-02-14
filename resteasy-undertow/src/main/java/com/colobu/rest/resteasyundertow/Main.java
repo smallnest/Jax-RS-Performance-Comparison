@@ -1,8 +1,11 @@
 package com.colobu.rest.resteasyundertow;
 
 
-import io.undertow.Undertow;
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
+
+import com.colobu.rest.jaxrs.MyApplication;
+
+import io.undertow.Undertow;
 
 public class Main {
     private static UndertowJaxrsServer server;
@@ -17,9 +20,9 @@ public class Main {
             port = Integer.parseInt(args[1]);
         }
 
-        Undertow.Builder builder = Undertow.builder().addListener(port, host);
+        Undertow.Builder builder = Undertow.builder().addHttpListener(port, host);
         server = new UndertowJaxrsServer().start(builder);
-        server.deploy(MyApplication.class, "/rest");
+        server.deploy(MyApplication.class, "/");
 
 //        DeploymentInfo di = server.undertowDeployment(MyApplication.class);
 //        di.setContextPath("/rest");

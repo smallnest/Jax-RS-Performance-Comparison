@@ -13,10 +13,15 @@
     <artifactId>dropwizard</artifactId>
 
     <properties>
-        <dropwizard.version>0.9.1</dropwizard.version>
+        <dropwizard.version>1.0.6</dropwizard.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <artifactId>jaxrs-common</artifactId>
+            <groupId>com.colobu</groupId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>

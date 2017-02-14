@@ -11,11 +11,12 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>resteasy-netty</artifactId>
 
-    <properties>
-        <resteasy.version>3.0.13.Final</resteasy.version>
-    </properties>
-
     <dependencies>
+        <dependency>
+            <artifactId>jaxrs-common</artifactId>
+            <groupId>com.colobu</groupId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jaxrs</artifactId>
@@ -34,7 +35,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.9</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

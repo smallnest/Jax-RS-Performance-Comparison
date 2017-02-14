@@ -6,6 +6,14 @@ target/
 *.class
 dependency-reduced-pom.xml
 
+# mvn versions files
+pom.xml.versionsBackup
+
+# eclipse
+.classpath
+.project
+
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 

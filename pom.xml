@@ -10,20 +10,25 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <jersey.version>2.22.1</jersey.version>
+        <resteasy.version>3.0.19.Final</resteasy.version>
+        <jersey.version>2.25.1</jersey.version>
         <java.version>1.8</java.version>
+        <springboot.version>1.5.1.RELEASE</springboot.version>
+
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <modules>
+        <module>jaxrs-common</module>
         <module>jersey-jetty</module>
         <module>jersey-grizzly2</module>
         <module>resteasy-undertow</module>
         <module>resteasy-netty</module>
         <module>dropwizard</module>
         <module>springboot</module>
+        <module>springboot-undertow</module>
         <module>nativenetty</module>
         <module>resteasy-netty4</module>
         <module>vertx</module>
