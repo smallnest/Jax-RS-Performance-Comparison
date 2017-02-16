@@ -4,6 +4,8 @@ package com.colobu.rest.resteasynetty;
 import org.jboss.resteasy.plugins.server.netty.NettyJaxrsServer;
 import org.jboss.resteasy.spi.ResteasyDeployment;
 
+import com.colobu.rest.jaxrs.MyApplication;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         String host = "0.0.0.0";
@@ -22,7 +24,7 @@ public class Main {
         netty.setDeployment(deployment);
         netty.setHostname(host);
         netty.setPort(port);
-        netty.setRootResourcePath("/rest");
+        netty.setRootResourcePath("/");
         netty.setSecurityDomain(null);
         netty.start();
     }

@@ -13,13 +13,18 @@
 
     <dependencies>
         <dependency>
+            <artifactId>jaxrs-common</artifactId>
+            <groupId>com.colobu</groupId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-grizzly2-http</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.9</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
