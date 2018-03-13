@@ -11,10 +11,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>resteasy-undertow</artifactId>
 
-    <properties>
-        <undertow.version>1.3.5.Final</undertow.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <artifactId>jaxrs-common</artifactId>

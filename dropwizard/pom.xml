@@ -12,9 +12,6 @@
 
     <artifactId>dropwizard</artifactId>
 
-    <properties>
-        <dropwizard.version>1.0.6</dropwizard.version>
-    </properties>
 
     <dependencies>
         <dependency>

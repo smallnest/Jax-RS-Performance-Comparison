@@ -11,10 +11,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jersey-jetty</artifactId>
 
-    <properties>
-        <jetty.version>9.2.14.v20151106</jetty.version>
-    </properties>
-
 
     <dependencies>
         <dependency>

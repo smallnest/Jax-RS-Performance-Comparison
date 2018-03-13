@@ -14,6 +14,11 @@
         <jersey.version>2.25.1</jersey.version>
         <java.version>1.8</java.version>
         <springboot.version>1.5.1.RELEASE</springboot.version>
+        <vertx.version>3.2.1</vertx.version>
+        <undertow.version>1.3.5.Final</undertow.version>
+        <netty.version>4.1.22.Final</netty.version>
+        <jetty.version>9.2.14.v20151106</jetty.version>
+        <dropwizard.version>1.0.6</dropwizard.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
