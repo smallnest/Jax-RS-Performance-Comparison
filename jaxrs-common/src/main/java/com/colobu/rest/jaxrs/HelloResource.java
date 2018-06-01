@@ -7,6 +7,10 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/rest/hello")
 public class HelloResource {
+    public HelloResource() {
+        System.out.println("HelloResource()");
+    }
+    
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String helloAsync() {
