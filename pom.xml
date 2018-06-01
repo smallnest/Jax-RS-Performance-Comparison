@@ -10,17 +10,20 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <resteasy.version>3.5.0.Final</resteasy.version>
-        <jersey.version>2.26</jersey.version>
-        <springboot.version>2.0.0.RELEASE</springboot.version>
+        <resteasy.version>3.5.1.Final</resteasy.version>
+        <jersey.version>2.27</jersey.version>
+        <springboot.version>2.0.2.RELEASE</springboot.version>
         <vertx.version>3.5.1</vertx.version>
         <undertow.version>2.0.1.Final</undertow.version>
-        <netty.version>4.1.22.Final</netty.version>
-        <jetty.version>9.4.8.v20171121</jetty.version>
+        <netty.version>4.1.25.Final</netty.version>
+        <jetty.version>9.4.10.v20180503</jetty.version>
         <dropwizard.version>1.2.4</dropwizard.version>
-        <async-http-servlet.version>3.0.19.Final</async-http-servlet.version>
+	    <async-http-servlet.version>3.0.19.Final</async-http-servlet.version>
+	    <wildfly.version>13.0.0.Final</wildfly.version>
 
         <java.version>1.8</java.version>
+        <grizzly.version>2.4.3</grizzly.version>
+
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,6 +40,9 @@
         <module>springboot-undertow</module>
         <module>nativenetty</module>
         <module>resteasy-netty4</module>
+	    <module>resteasy-jetty</module>
+	    <!-- <module>resteasy-wildfly</module> -->
+        <!-- <module>resteasy-grizzly</module>  -->
         <module>vertx</module>
         <module>vertx-verticles</module>
         <!--<module>armeria</module>-->
