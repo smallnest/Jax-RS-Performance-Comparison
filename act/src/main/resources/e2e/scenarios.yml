@@ -1,0 +1,9 @@
+Scenario(REST Hello Service):
+  description: a service says hello
+  interactions:
+    - description: send request to hello service without parameter
+      request:
+        method: GET
+        url: /rest/hello
+      response:
+        text: Hello world # response text must be "Hello world"
